@@ -600,6 +600,82 @@ header.sticky .nav-bar{
   font-size: var(--small-font-size);
 }
 
+
+/*=======BookLab section=======*/
+.booklab .container .content{
+  column-gap: 60px;
+  width: 100%;
+}
+
+.booklab-img{
+  position: relative;
+max-width: 45%;
+}
+
+.booklab .section{
+  position: relative;
+  max-width: 1150px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0rem 0rem 0rem;
+
+}
+
+.booklab-img img{
+  max-width: 100%;
+  min-width: 500px;
+  border-radius: 10px;
+}
+
+.booklab-info .description{
+  max-width: 1200px;
+}
+
+.booklab-info .description h3{
+  font-size: 2em;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.booklab-info .description h4{
+  font-size: 1.3em;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.booklab-info .description h4 span{
+  color: var(--second-color);
+}
+
+.booklab-info .description p{
+  color: var(--third-color);
+  font-size: var(--normal-font-size);
+  margin-bottom: 10px;
+}
+
+.booklab-info .professional-list{
+  display: flex;
+  column-gap: 30px;
+}
+
+.booklab-info .professional-list .list-item{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 15px;
+  margin-bottom: 20px;
+}
+
+.booklab-info .professional-list .list-item h3{
+  font-size: 2.5em;
+  font-weight: 700;
+}
+
+.booklab-info .professional-list .list-item span{
+  color: var(--third-color);
+  font-size: var(--small-font-size);
+}
+
 /*=======Skills section=======*/
 .skills .container .content{
   width: 100%;
@@ -999,7 +1075,7 @@ header.sticky .nav-bar{
 
 /*=======Get-in-touct=======*/
 .get-in-touch{
-  margin-top: 70px;
+  margin-top: 10px;
 }
 
 .get-in-touch .container .content{
@@ -1022,18 +1098,18 @@ header.sticky .nav-bar{
 }
 
 .contact-card .title h4{
-  font-size: 1.2em;
+  font-size: 1.0em;
   font-weight: 300;
   line-height: 20px;
 }
 
 .contact-card .title h3{
-  font-size: 2.3em;
+  font-size: 2.1em;
   font-weight: 400;
 }
 
 .contact-card .title h2{
-  font-size: 4.2em;
+  font-size: 4.0em;
   font-weight: 700;
   background: linear-gradient(to top, transparent 0%, var(--first-color) 30%);
   -webkit-background-clip: text;
@@ -1392,6 +1468,36 @@ footer a{
   }
 
   .about-info .professional-list .list-item{
+    justify-content: start;
+  }
+
+  /*=======BookLab section=======*/
+  .booklab .container .content{
+    display: grid;
+    width: 100%;
+    row-gap: 20px;
+  }
+
+.booklab-img{
+  position: relative;
+max-width: 90%;
+}
+
+  .booklab-img img{
+      min-width: 0;
+    width: 100%;
+  }
+
+  .booklab-info{
+    min-width: 0;
+    width: 100%;
+  }
+
+  .booklab-info .professional-list{
+    flex-direction: column;
+  }
+
+  .booklab-info .professional-list .list-item{
     justify-content: start;
   }
 
