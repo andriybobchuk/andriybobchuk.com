@@ -280,7 +280,7 @@ header.sticky .nav-bar{
 }
 
 .home-container .home-img img{
-  width: 90%;
+  width: 65%;
   transform: translate(0, 0);
 }
 
@@ -532,7 +532,15 @@ header.sticky .nav-bar{
 }
 
 .about-img{
+  max-width: 80%;
   position: relative;
+}
+
+.about-video video {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 8px; /* Optional: to match the style of the image */
 }
 
 .about .section{
@@ -609,7 +617,7 @@ header.sticky .nav-bar{
 
 .booklab-img{
   position: relative;
-max-width: 45%;
+max-width: 50%;
 }
 
 .booklab .section{
