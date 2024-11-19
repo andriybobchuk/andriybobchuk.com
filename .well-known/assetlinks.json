@@ -1,0 +1,9 @@
+[{
+  "relation": ["delegate_permission/common.handle_all_urls"],
+  "target": {
+    "namespace": "android_app",
+    "package_name": "com.studios1299.playwall",
+    "sha256_cert_fingerprints":
+    ["8A:DE:A4:61:FF:2B:32:08:B0:15:77:FC:85:C2:AD:20:63:38:A4:6A:FB:AC:75:B7:2A:52:52:C6:97:11:F0:D6"]
+  }
+}]
