@@ -15,8 +15,9 @@
 
     <script>
         function openApp() {
-            const url = window.location.href; // Gets the full URL with parameters
-            window.location = `myapp://open?link=${encodeURIComponent(url)}`;
+            // Build the link dynamically, ensuring it matches your intent filter
+            const url = window.location.href; // Get the current URL with parameters
+            window.location = url; // Open the app using the exact URL
         }
     </script>
 
