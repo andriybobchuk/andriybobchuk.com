@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App Invite</title>
+    <link rel="stylesheet" href="../css/style.css"> <!-- Adjust path if needed -->
+</head>
+<body>
+    <div class="container">
+        <h1>You're Invited!</h1>
+        <p>Click the button below to open the app and accept the invitation.</p>
+        <button onclick="openApp()">Open in App</button>
+    </div>
+
+    <script>
+        function openApp() {
+            const url = window.location.href; // Gets the full URL with parameters
+            window.location = `myapp://open?link=${encodeURIComponent(url)}`;
+        }
+    </script>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            margin-top: 50px;
+        }
+        h1 {
+            color: #333;
+        }
+        p {
+            color: #555;
+        }
+        button {
+            background-color: #007BFF;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</body>
+</html>
